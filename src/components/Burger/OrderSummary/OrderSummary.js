@@ -4,7 +4,7 @@ import Button from '../../UI/Button/Button'
 const orderSummary = props => {
 const ingr = props.ingrs;
 const comp = Object.keys(ingr).map(ikeys => {
-    return (<h3><span style= {{textTransform:'capitalize'}}>{ikeys}</span> : {ingr[ikeys]} </h3>)
+    return (<h3 key={ikeys}><span style= {{textTransform:'capitalize'}}>{ikeys}</span> : {ingr[ikeys]} </h3>)
 });
 return(
     <Aux>
